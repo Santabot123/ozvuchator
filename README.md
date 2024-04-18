@@ -1,5 +1,15 @@
 # What is this?
-This is a program that reads text from your screen.
+This is a program that reads text from your screen.<br>
+
+![Знімок екрана 2024-04-18 124413](https://github.com/Santabot123/ozvuchator/assets/56690519/1f905e47-afa7-4d1d-962b-c535d5eb15ec)
+
+
+https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d13-e77204468ee6
+
+
+
+
+
 # System Requirements.
 - OS: Windows 10/11 64-bit
 - ffmpeg installed
