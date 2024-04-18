@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QWidget" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>337</width>
+    <height>524</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QGroupBox" name="general_groupBox">
+     <property name="title">
+      <string>Загальні налаштування</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,1,2,2">
+        <item>
+         <widget class="QCheckBox" name="TRANSLATE_checkBox">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Якщо галочка встановлена, буде відбуватися переклад&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Переклад</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="TRANSLATE_FROM_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Виберіть мову, з якої потрібно виконати переклад. Переклад буде виконано з цієї мови на &lt;span style=&quot; font-weight:700;&quot;&gt;Мову голосу&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Переклад з :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="TRANSLATE_FROM_comboBox">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Виберіть мову, з якої потрібно виконати переклад. Переклад буде виконано з цієї мови на &lt;span style=&quot; font-weight:700;&quot;&gt;Мову голосу&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>en</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>af</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bg</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bn</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bs</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>cs</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>da</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>de</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>es</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>et</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hi</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>id</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>is</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>it</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>kn</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ko</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>la</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>lv</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ms</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ne</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>nl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>no</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pt</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sk</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sq</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sv</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sw</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>te</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>th</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>tl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>tr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>uk</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ur</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vi</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QCheckBox" name="RESIZE_checkBox">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Якщо встановлено цю галочку, роздільну здатність зображення буде змінено перед розпізнаванням тексту. Це може бути корисно для зменшення кількості обчислень.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Зміна розміру</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="RESIZE_SCALE_label">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Цей параметр визначає, наскільки буде змінено роздільну здатність зображення. Наприклад: якщо розмір зображення 1000х1000 пікселів і масштаб = 0.9, то перед розпізнаванням тексту розмір зображення буде зменшено до 900х900 пікселів.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="text">
+             <string>Масштаб : </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="RESIZE_SCALE_lineEdit">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Цей параметр визначає, наскільки буде змінено роздільну здатність зображення. Наприклад: якщо розмір зображення 1000х1000 пікселів і масштаб = 0.9, то перед розпізнаванням тексту розмір зображення буде зменшено до 900х900 пікселів.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="text">
+             <string>0.9</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="SPEAK_LANGUAGE_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Цей параметр визначає мову, якою буде озвучено текст.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Мова голосу : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="SPEAK_LANGUAGE_comboBox">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Цей параметр визначає мову, якою буде озвучено текст.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>uk</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>en</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>af</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bg</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bn</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bs</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>cs</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>da</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>de</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>es</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>et</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hi</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>id</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>is</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>it</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>kn</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ko</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>la</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>lv</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ms</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ne</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>nl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>no</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pt</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sk</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sq</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sv</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sw</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>te</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>th</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>tl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>tr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ur</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vi</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="SPEED_UP_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Цей параметр визначає, наскільки буде прискорено мовлення.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Прискорення голосу :  : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="SPEED_UP_label_2">
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="SPEED_UP_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Цей параметр визначає, наскільки буде прискорено мовлення.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>20</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="SPEED_UP_label_3">
+          <property name="text">
+           <string>%</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="IGNORE_WORDS_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ці слова/символи будуть проігноровані і не будуть озвучені. Якщо ви вводите кілька слів, розділяйте їх комою.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Ігнорувати : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="IGNORE_WORDS_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ці слова/символи будуть проігноровані і не будуть озвучені. Якщо ви вводите кілька слів, розділяйте їх комою.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="Auto_mode_groupBox">
+     <property name="title">
+      <string>Налаштування автоматичного режиму</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="AUTO_MODE_radioButton">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Вмикає автоматичний режим. Виберіть область один раз, і коли там з'явиться новий текст, він буде озвучений.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Автоматичний режим</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Select_area_pushButton">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Натисніть, щоб вибрати область екрана, де знаходиться ваш текст.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Вибрати область</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="LEFT_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Найлівіша точка виділеної області.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Ліво : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="LEFT_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Найлівіша точка виділеної області.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>100</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="RIGHT_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Найправіша точка виділеної області.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Право : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="RIGHT_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Найправіша точка виділеної області.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>300</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="TOP_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Найвища точка виділеної області.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Верх : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="TOP_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Найвища точка виділеної області.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>100</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="BOTTOM_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Найнижча точка вибраної області.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Низ : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="BOTTOM_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Найнижча точка вибраної області.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>300</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="PAUSE_KEY_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Призупинити/Продовжити virtual-key код (за замовчуванням Esc).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>⏯ virtual-key код : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="PAUSE_KEY_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Призупинити/Продовжити virtual-key код (за замовчуванням Esc).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>0x70</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="Manual_mode_groupBox">
+     <property name="title">
+      <string>Налаштування ручного режиму</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="MANUAL_MODE_radioButton">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Вмикає ручний режим. Щоразу, коли вам потрібно озвучити текст, ви повинні вручну вибрати область, де він знаходиться.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Ручний режим</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="MANUAL_MODE_KEY_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Віртуальна клавіша - код клавіші, яку потрібно натиснути для запуску ручного режиму (за замовчуванням F2). Після натискання цієї клавіші потрібно вибрати область, в якій знаходиться текст, після чого він буде озвучений.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Virtual-key код для ручного режиму : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="MANUAL_MODE_KEY_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Віртуальна клавіша - код клавіші, яку потрібно натиснути для запуску ручного режиму (за замовчуванням F2). Після натискання цієї клавіші потрібно вибрати область, в якій знаходиться текст, після чого він буде озвучений.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>0x71</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_13">
+     <item>
+      <widget class="QPushButton" name="APPLY_pushButton">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Натисніть цю кнопку, щоб зберегти налаштування.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Застосувати налаштування</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="RUN_pushButton">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Запуск&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Запуск</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
