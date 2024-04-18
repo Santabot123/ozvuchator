@@ -1,5 +1,12 @@
 # Що це таке?
-Це програма, яка читає текст з вашого екрану.
+Це програма, яка читає текст з вашого екрану. <br>
+
+![Знімок екрана 2024-04-18 122325](https://github.com/Santabot123/ozvuchator/assets/56690519/8a5ba4d8-2d1d-4de9-8e11-69a19e0184da)
+
+https://github.com/Santabot123/ozvuchator/assets/56690519/feeb47d6-1444-4b64-9a9c-d449d69d620a
+
+
+
 # Системні вимоги.
 - OS: Windows 10/11 64-bit
 - встановлений ffmpeg
