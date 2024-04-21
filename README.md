@@ -16,7 +16,7 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/feeb47d6-1444-4b64-9a9
  Є 2 способи:
  1. exe-файл:
     - Встановіть ffmpeg і додайте його до PATH вашої системи (в інтернеті є багато гайдів, як це зробити)
-    - Завантажте та розпакуйте цей [архів](https://drive.google.com/file/d/1xM7ffrG_ClKEfnw-brCjU0MxSG4_BAZh/view?usp=drive_link).
+    - Завантажте та розпакуйте цей [архів](https://drive.google.com/file/d/1dCeuGqOG6v4bfYHIggM--vihtEYOShJ4/view?usp=drive_link).
     - Потім для запуску перейдіть до `exe.win-amd64-3.9` і запустіть `ozvuchator.exe`.
  2. jupyter notebook:
     - Встановіть ffmpeg і додайте його до PATH вашої системи (в інтернеті є багато гайдів, як це зробити)
@@ -39,6 +39,51 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/feeb47d6-1444-4b64-9a9
 - Якщо у вас встановлена відеокарта Nvidia, за замовчуванням буде використовуватися вона, у всіх інших випадках буде використовуватися CPU
 - Чим довший текст, тим більша затримка перед генерацією голосу
 - Якщо ви збираєтеся використовувати цю програму під час гри, вам може знадобитися переключити гру у віконний/безрамочний режим
+
+# Список підтримуваних мов:
+- afrikaans : 'af'<br>
+- albanian : 'sq'<br>
+- arabic : 'ar'<br>
+- bengali : 'bn'<br>
+- bosnian : 'bs'<br>
+- bulgarian : 'bg'<br>
+- croatian : 'hr'<br>
+- czech : 'cs'<br>
+- danish : 'da'<br>
+- dutch : 'nl'<br>
+- english : 'en'<br>
+- estonian : 'et'<br>
+- filipino : 'tl'<br>
+- french : 'fr'<br>
+- german : 'de'<br>
+- hindi : 'hi'<br>
+- hungarian : 'hu'<br>
+- icelandic : 'is'<br>
+- indonesian : 'id'<br>
+- italian : 'it'<br>
+- japanese : 'ja'<br>
+- kannada : 'kn'<br>
+- korean : 'ko'<br>
+- latin : 'la'<br>
+- latvian : 'lv'<br>
+- malay : 'ms'<br>
+- marathi : 'mr'<br>
+- nepali : 'ne'<br>
+- norwegian : 'no'<br>
+- polish : 'pl'<br>
+- portuguese : 'pt'<br>
+- romanian : 'ro'<br>
+- slovak : 'sk'<br>
+- spanish : 'es'<br>
+- swahili : 'sw'<br>
+- swedish : 'sv'<br>
+- tamil : 'ta'<br>
+- telugu : 'te'<br>
+- thai : 'th'<br>
+- turkish : 'tr'<br>
+- ukrainian : 'uk'<br>
+- urdu : 'ur'<br>
+- vietnamese : 'vi'<br>
 
 
 
