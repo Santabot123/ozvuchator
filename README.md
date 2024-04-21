@@ -42,6 +42,50 @@ There are 2 modes of use: manual and auto.
 - If you have an Nvidia video card installed, it will be used by default, in all other cases the CPU will be used
 - The longer the text is, the longer the delay before the voice is generated
 - If you are going to use this program during the game, you may need to switch the game to windowed/borderless mode
+<br>
 
-
+# List of supported languages:
+- afrikaans : 'af'<br>
+- albanian : 'sq'<br>
+- arabic : 'ar'<br>
+- bengali : 'bn'<br>
+- bosnian : 'bs'<br>
+- bulgarian : 'bg'<br>
+- croatian : 'hr'<br>
+- czech : 'cs'<br>
+- danish : 'da'<br>
+- dutch : 'nl'<br>
+- english : 'en'<br>
+- estonian : 'et'<br>
+- filipino : 'tl'<br>
+- french : 'fr'<br>
+- german : 'de'<br>
+- hindi : 'hi'<br>
+- hungarian : 'hu'<br>
+- icelandic : 'is'<br>
+- indonesian : 'id'<br>
+- italian : 'it'<br>
+- japanese : 'ja'<br>
+- kannada : 'kn'<br>
+- korean : 'ko'<br>
+- latin : 'la'<br>
+- latvian : 'lv'<br>
+- malay : 'ms'<br>
+- marathi : 'mr'<br>
+- nepali : 'ne'<br>
+- norwegian : 'no'<br>
+- polish : 'pl'<br>
+- portuguese : 'pt'<br>
+- romanian : 'ro'<br>
+- slovak : 'sk'<br>
+- spanish : 'es'<br>
+- swahili : 'sw'<br>
+- swedish : 'sv'<br>
+- tamil : 'ta'<br>
+- telugu : 'te'<br>
+- thai : 'th'<br>
+- turkish : 'tr'<br>
+- ukrainian : 'uk'<br>
+- urdu : 'ur'<br>
+- vietnamese : 'vi'<br>
 
