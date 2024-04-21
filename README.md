@@ -46,6 +46,7 @@ There are 2 modes of use: manual and auto.
 - If you have an Nvidia video card installed, it will be used by default, in all other cases the CPU will be used
 - The longer the text is, the longer the delay before the voice is generated
 - If you are going to use this program during the game, you may need to switch the game to windowed/borderless mode
+- Text recognition will work well only with printed letters 
 <br>
 
 # List of supported languages:
