@@ -125,7 +125,7 @@ def select_area():
         elif event == cv.EVENT_MOUSEMOVE:
             if drawing == True:
                 cv.rectangle(img, (ix, iy), (x, y), (41, 215, 162), -1)
-                cv.putText(img, 'PRESS ANY KEY TO SELECT THIS AREA', (ix, iy-10), cv.FONT_HERSHEY_SIMPLEX, 0.9, (55,46,52), 2)
+                cv.putText(img, 'PRESS ANY KEY TO SELECT THIS AREA', (ix, iy-10), cv.FONT_HERSHEY_SIMPLEX, 0.9, (55,46,252), 2)
                 img=cv.addWeighted(overlay, alpha, img, 1 - alpha, 0)
         elif event == cv.EVENT_LBUTTONUP:
             global LEFT,TOP,RIGHT,BOTTOM
@@ -341,7 +341,7 @@ def manual_mode():
                 break
             
             MANUAL_MODE_KEY_status=toggle(MANUAL_MODE_KEY_status)
-            display('НАТИСНУТО КЛАВІШУ РУЧНОГО РЕЖИМУ')
+            display('MANUAL MODE KEY PRESSED')
 
  
         if MANUAL_MODE_KEY_status:
@@ -481,12 +481,17 @@ class mywidget(QWidget):
             self.ui.RUN_pushButton.setText("Wait")
             self.ui.RUN_pushButton.setStyleSheet('QPushButton{color: rgb(0,0,0);background-color: rgb(252, 215, 3);border-radius: 5px;}')
             
+            global SPEAK_LANGUAGE,DETECTION_LANGUAGES,TRANSLATE,TRANSLATE_FROM,TRANSLATE_TO,SPEED_UP,RESIZE,RESIZE_SCALE,PAUSE_KEY,MANUAL_MODE_KEY,IGNORE_WORDS
+            
             SPEAK_LANGUAGE=config['settings']['SPEAK_LANGUAGE']
             DETECTION_LANGUAGES = [SPEAK_LANGUAGE]
             
             TRANSLATE =eval(config['settings']['translate'])
             TRANSLATE_FROM=config['settings']['TRANSLATE_FROM']
             TRANSLATE_TO=SPEAK_LANGUAGE
+
+            if TRANSLATE:
+                DETECTION_LANGUAGES =[TRANSLATE_FROM]
             
             SPEED_UP=int(config['settings']['SPEED_UP'])
             
@@ -519,8 +524,6 @@ class mywidget(QWidget):
             self.ui.RUN_pushButton.setStyleSheet('QPushButton{color: rgb(255, 255, 255);background-color: rgb(200, 0, 0);border-radius: 5px;}')
 
         else:
-            self.ui.RUN_pushButton.setText("Запуск")
-            self.ui.RUN_pushButton.setStyleSheet('') 
             global stop_thread
             stop_thread = True
             sys.exit()

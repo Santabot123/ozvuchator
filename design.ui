@@ -574,7 +574,7 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Цей параметр визначає, наскільки буде прискорено мовлення.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Прискорення голосу :  : </string>
+           <string>Прискорення голосу : </string>
           </property>
          </widget>
         </item>
