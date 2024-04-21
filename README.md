@@ -19,7 +19,7 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d1
  There are 2 ways:
  1. exe file:
     - Install ffmpeg and add it to the PATH of your system (there are a lot of guides on the Internet how to do this)
-    - Download and unzip this [archive](https://drive.google.com/file/d/10EWmP2It9Iy3QwZwAw3iV4Leeu4rjXXE/view?usp=drive_link).
+    - Download and unzip this [archive](https://drive.google.com/file/d/19LmVONluu1whlN5aSvt-j1R79hrsMBSR/view?usp=sharing).
     - Then to run, go to `exe.win-amd64-3.9` and run `ozvuchator.exe`
  2. jupyter notebook:
     - Install ffmpeg and add it to the PATH of your system (there are a lot of guides on the Internet how to do this)
