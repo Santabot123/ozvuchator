@@ -3,8 +3,14 @@
 
 ![Знімок екрана 2024-04-18 122325](https://github.com/Santabot123/ozvuchator/assets/56690519/8a5ba4d8-2d1d-4de9-8e11-69a19e0184da)
 
+## Коротке демо
 https://github.com/Santabot123/ozvuchator/assets/56690519/feeb47d6-1444-4b64-9a9c-d449d69d620a
 
+## Демонстрація того як працює ручний режим
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/XBd4vCp3Rq4/0.jpg)](https://www.youtube.com/watch?v=XBd4vCp3Rq4)
+
+## Демонстрація того як працює автоматичний режим
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NWhn4AtTWNg/0.jpg)](https://www.youtube.com/watch?v=NWhn4AtTWNg)
 
 
 # Системні вимоги.
