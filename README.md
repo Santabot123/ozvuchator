@@ -3,10 +3,14 @@ This is a program that reads text from your screen.<br>
 
 ![Знімок екрана 2024-04-18 124413](https://github.com/Santabot123/ozvuchator/assets/56690519/1f905e47-afa7-4d1d-962b-c535d5eb15ec)
 
-
+## Short demo
 https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d13-e77204468ee6
 
+## Demonstration of how the manual mode works
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/XBd4vCp3Rq4/0.jpg)](https://www.youtube.com/watch?v=XBd4vCp3Rq4)
 
+## Demonstration of how the auto mode works
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NWhn4AtTWNg/0.jpg)](https://www.youtube.com/watch?v=NWhn4AtTWNg)
 
 
 
