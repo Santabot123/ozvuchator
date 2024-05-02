@@ -37,6 +37,10 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d1
 # Versions
 There are three versions: Pytesseract, EasyOCR, and Pytesseract+EasyOCR. Here is some information about them so you can decide which one you need:
 - Pytesseract - uses Tesseract, choose this version if the text you want to listen to: contrasts with the background, looks like a scanned document or screenshot. Make sure that the area of the screen you choose does not include interface elements/window borders/icons, as they can be incorrectly recognized as orthographic characters. It also takes up the least amount of disk space. Examples of text that Pytesseract handles well:
+ ![Знімок екрана 2024-05-02 191519](https://github.com/Santabot123/ozvuchator/assets/56690519/9bf8da3b-6e42-4b44-974b-353b9caafa91)
+![Знімок екрана 2024-05-02 192450](https://github.com/Santabot123/ozvuchator/assets/56690519/ca7f454c-750b-41e4-8d38-376f8f723980)
+![Знімок екрана 2024-04-27 182902](https://github.com/Santabot123/ozvuchator/assets/56690519/6b93a6a2-fce8-4db0-b5f4-1c00ddd67ab3)
+
 - EasyOCR - сhoose this version of your text if it doesn't contrast well with the background, is in a photo, or has some distortion due to perspective. EasyOCR can also use the Nvidia GPU instead of the CPU. Examples of text that EasyOCR handles well:
 - Pytesseract+EasyOCR is essentially two previous versions combined into one, which gives you the flexibility to choose which method to use.
 
