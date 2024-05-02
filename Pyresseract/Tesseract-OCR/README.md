@@ -1,1 +1,1 @@
-install Tesseract-OCR in this folder
+# install Tesseract-OCR in this folder
