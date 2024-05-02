@@ -22,7 +22,7 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d1
  Є 2 способи:
  1. exe-файл:
     - Виберіть версію (якщо ви не знаєте, яку вибрати, прочитайте розділ **Версії** нижче) 
-    - Завантажте та розархівуйте один з цих архівів: [Pytesseract](https://drive.google.com/file/d/1oHwtpnOMQK-DUUiOAeekGwXaplZM-gS2/view?usp=sharing), [EasyOCR](https://drive.google.com/file/d/1JKMzWmEHGqZk0-FD3_ZalcqHBvNe2qZ9/view?usp=sharing), [EasyOCR+Pytesseract](https://drive.google.com/file/d/1oHwtpnOMQK-DUUiOAeekGwXaplZM-gS2/view?usp=sharing).
+    - Завантажте та розархівуйте один з цих архівів: [Pytesseract](https://drive.google.com/file/d/1oHwtpnOMQK-DUUiOAeekGwXaplZM-gS2/view?usp=sharing), [EasyOCR](https://drive.google.com/file/d/1JKMzWmEHGqZk0-FD3_ZalcqHBvNe2qZ9/view?usp=sharing), [EasyOCR+Pytesseract]([https://drive.google.com/file/d/1oHwtpnOMQK-DUUiOAeekGwXaplZM-gS2/view?usp=sharing](https://drive.google.com/file/d/1vJq_qg2CgA7HWSxxWV2ZUKCVnL0oFyOC/view?usp=sharing)).
     - Для запуску перейдіть до `exe.win-amd64-3.10` і запустіть `ozvuchator.exe`.
  3. jupyter notebook:
    - Встановіть [Anaconda](https://www.anaconda.com/installation-success?source=installer)
