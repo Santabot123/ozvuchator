@@ -21,7 +21,7 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d1
 # Installation.
  There are 2 ways:
  1. exe file:
-    - Choose a version (if you do not know what to choose, read the Versions chapter below) 
+    - Choose a version (if you do not know what to choose, read the **Versions** chapter below) 
     - Download and unzip one of these archives : [Pytesseract](https://drive.google.com/file/d/1iWj3KTTYqXC0rV6dT2TqtNJLjFBBkGg_/view?usp=sharing), [EasyOCR](https://drive.google.com/file/d/1PR-r4gNP2HIV87lmcxK1qHnZHBag28hU/view?usp=sharing), [EasyOCR+Pytesseract](https://drive.google.com/file/d/1tkqsdPiK4eu4iOYi4diJva3RawpzL7EM/view?usp=sharing).
     - Then to run, go to `exe.win-amd64-3.10` and run `ozvuchator.exe`
  3. jupyter notebook:
@@ -36,13 +36,17 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d1
 
 # Versions
 There are three versions: Pytesseract, EasyOCR, and Pytesseract+EasyOCR. Here is some information about them so you can decide which one you need:
-- Pytesseract - uses Tesseract, choose this version if the text you want to listen to: contrasts with the background, looks like a scanned document or screenshot. Make sure that the area of the screen you choose does not include interface elements/window borders/icons, as they can be incorrectly recognized as orthographic characters. It also takes up the least amount of disk space. Examples of text that Pytesseract handles well:
- ![Знімок екрана 2024-05-02 191519](https://github.com/Santabot123/ozvuchator/assets/56690519/9bf8da3b-6e42-4b44-974b-353b9caafa91)
+- **Pytesseract** - uses Tesseract, choose this version if the text you want to listen to: contrasts with the background, looks like a scanned document or screenshot. Make sure that the area of the screen you choose does not include interface elements/window borders/icons, as they can be incorrectly recognized as orthographic characters. It also takes up the least amount of disk space. Examples of text that Pytesseract handles well:<br>
+![Знімок екрана 2024-05-02 191519](https://github.com/Santabot123/ozvuchator/assets/56690519/9bf8da3b-6e42-4b44-974b-353b9caafa91)
 ![Знімок екрана 2024-05-02 192450](https://github.com/Santabot123/ozvuchator/assets/56690519/ca7f454c-750b-41e4-8d38-376f8f723980)
 ![Знімок екрана 2024-04-27 182902](https://github.com/Santabot123/ozvuchator/assets/56690519/6b93a6a2-fce8-4db0-b5f4-1c00ddd67ab3)
 
-- EasyOCR - сhoose this version of your text if it doesn't contrast well with the background, is in a photo, or has some distortion due to perspective. EasyOCR can also use the Nvidia GPU instead of the CPU. Examples of text that EasyOCR handles well:
-- Pytesseract+EasyOCR is essentially two previous versions combined into one, which gives you the flexibility to choose which method to use.
+- **EasyOCR** - сhoose this version of your text if it doesn't contrast well with the background, is in a photo, or has some distortion due to perspective. EasyOCR can also use the Nvidia GPU instead of the CPU. Examples of text that EasyOCR handles well:
+![Знімок екрана 2024-05-02 192758](https://github.com/Santabot123/ozvuchator/assets/56690519/12f55c92-5157-4258-a10e-70726d0d0afa)
+![Знімок екрана 2024-05-02 193230](https://github.com/Santabot123/ozvuchator/assets/56690519/8e06752e-164b-4b3f-960f-e929dc2a4888)
+
+- Pytesseract+EasyOCR is essentially two previous versions combined into one, which gives you the flexibility to choose which method to use.<br>
+![Знімок екрана 2024-05-02 193531](https://github.com/Santabot123/ozvuchator/assets/56690519/fc241c2b-ce47-4092-bd57-ca4b74ab3e94)
 
 
 # Usage
@@ -56,8 +60,7 @@ If you have already clicked Run and then want to change the settings, you need t
 
 
 # Note
-- To read what a particular parameter does, hover over it with the cursor
-- If you have an Nvidia video card installed, it will be used by default, in all other cases the CPU will be used
+- To read what a particular parameter does, hover over it with the cursor.
 - The longer the sentence, the longer the delay before the sound is played.
 - If you are going to use this program during the game, you may need to switch the game to windowed/borderless mode.
 - Text recognition will work well **only with printed letters** .
