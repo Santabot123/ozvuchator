@@ -14,7 +14,7 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d1
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NWhn4AtTWNg/0.jpg)](https://www.youtube.com/watch?v=NWhn4AtTWNg)
 
 
-# # Системні вимоги
+# Системні вимоги
 - OS: Windows 10/11 64-bit
 - підключення до Інтернету
 
