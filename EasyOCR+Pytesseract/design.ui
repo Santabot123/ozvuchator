@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QWidget" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>353</width>
+    <height>679</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QGroupBox" name="general_groupBox">
+     <property name="title">
+      <string>General settings</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QRadioButton" name="EasyOCR_radioButton">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If you want to recognize text from photos, it is usually better to use EasyOCR. If you have an Nvidia GPU, it will use it by default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>EasyOCR</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="Pytesseract_radioButton">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If you want to recognize document-like text, it is usually better to use Pytesseract. Tesseract will use only the CPU.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Pytesseract</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="Pytesseract_settings_groupBox">
+        <property name="title">
+         <string>Pytesseract settings</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="THRESHOLD_label">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;For better performance, Pytesseract needs to convert the image to black and white. All pixels below this threshold will be black and all above will be white.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>Threshold :</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="THRESHOLD_spinBox">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;For better performance, Pytesseract needs to convert the image to black and white. All pixels below this threshold will be black and all above will be white.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="singleStep">
+              <number>5</number>
+             </property>
+             <property name="value">
+              <number>127</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QCheckBox" name="OUTLINED_checkBox">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;By default, Pytesseract doesn't work well with outlined text. So if your text is outlined, check this box. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>Outlined text</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="REDUCE_NOISE_checkBox">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select this if you have a lot of noise in your image.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>Reduce noise</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="PREVIEW_pushButton">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click this button to see what your image will look like for Pytesseract If the text is hardly visible or not visible at all, try playing with the threshold and check &lt;span style=&quot; font-weight:700;&quot;&gt;Reduce noise&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>Preview</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QCheckBox" name="TRANSLATE_checkBox">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If checked, translation will be performed&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Translate</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="TRANSLATE_FROM_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select the language from which the translation should be performed. Translation will be carried out from this language to the &lt;span style=&quot; font-weight:700;&quot;&gt;Speech language.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Translate from : </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="TRANSLATE_FROM_comboBox">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select the language from which the translation should be performed. Translation will be carried out from this language to the &lt;span style=&quot; font-weight:700;&quot;&gt;Speech language.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>en</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>af</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bg</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bn</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bs</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>cs</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>da</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>de</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>es</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>et</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hi</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>id</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>is</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>it</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>kn</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ko</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>la</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>lv</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ms</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ne</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>nl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>no</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pt</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sk</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sq</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sv</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sw</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>te</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>th</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>tl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>tr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>uk</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ur</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vi</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QCheckBox" name="RESIZE_checkBox">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If checked, the image resolution will be changed before text detection. This can be useful for reducing the number of calculations.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Resize</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="RESIZE_SCALE_label">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This parameter determines how much the image resolution should be changed. For example: if the image size is 1000x1000 pixels and the resize scale = 0.9, then the image size will be reduced to 900x900 pixels before text detection.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="text">
+             <string>Resize scale : </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="RESIZE_SCALE_lineEdit">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This parameter determines how much the image resolution should be changed. For example: if the image size is 1000x1000 pixels and the resize scale = 0.9, then the image size will be reduced to 900x900 pixels before text detection.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="text">
+             <string>0.9</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="SPEAK_LANGUAGE_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This parameter determines the language in which the text is voiced.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Speech language : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="SPEAK_LANGUAGE_comboBox">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This parameter determines the language in which the text is voiced.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>en</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>af</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bg</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bn</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bs</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>cs</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>da</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>de</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>es</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>et</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hi</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>id</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>is</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>it</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ja</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>kn</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ko</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>la</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>lv</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ms</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ne</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>nl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>no</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>pt</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sk</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sq</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sv</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sw</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>te</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>th</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>tl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>tr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>uk</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ur</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vi</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="SPEED_UP_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This parameter determines how much speech will be accelerated.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Speech acceleration : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="SPEED_UP_label_2">
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="SPEED_UP_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This parameter determines how much speech will be accelerated.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>20</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="SPEED_UP_label_3">
+          <property name="text">
+           <string>%</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="IGNORE_WORDS_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;These words/symbols will be ignored and will not be voiced. If you enter several words, separate them with a comma.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Ignore words : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="IGNORE_WORDS_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;These words/symbols will be ignored and will not be voiced. If you enter several words, separate them with a comma.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="Auto_mode_groupBox">
+     <property name="title">
+      <string>Auto mode settings</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="AUTO_MODE_radioButton">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enables auto mode. Select the area once and when a new text appears there, it will be voiced.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Auto mode</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Select_area_pushButton">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Press to select the area of the screen where your text is located.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Select area</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="LEFT_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The leftmost point of the selected area.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>LEFT : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="LEFT_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The leftmost point of the selected area.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>100</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="RIGHT_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The rightmost point of the selected area.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>RIGHT : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="RIGHT_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The rightmost point of the selected area.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>300</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="TOP_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The topmost point of the selected area.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>TOP : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="TOP_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The topmost point of the selected area.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>100</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="BOTTOM_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The lowest point of the selected area.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>BOTTOM : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="BOTTOM_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The lowest point of the selected area.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>300</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="PAUSE_KEY_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pause/Play virtual-key code (&lt;span style=&quot; font-weight:700;&quot;&gt;Esc by default&lt;/span&gt;).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>⏯ virtual-key Code : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="PAUSE_KEY_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pause/Play virtual-key code (&lt;span style=&quot; font-weight:700;&quot;&gt;Esc by default&lt;/span&gt;).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>0x70</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="Manual_mode_groupBox">
+     <property name="title">
+      <string>Manual mode settings</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="MANUAL_MODE_radioButton">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enables manual mode.  Every time you need to voice the text, you have to manually select the area where it is located.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Manual mode</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="MANUAL_MODE_KEY_label">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Virtual-key code of the key you have to press to start the manual mode (&lt;span style=&quot; font-weight:700;&quot;&gt;F2 by default&lt;/span&gt;). After pressing this key, you have to select the area in which the text is located and then it will be voiced.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Manual mode virtual-key code : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="MANUAL_MODE_KEY_lineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Virtual-key code of the key you have to press to start the manual mode (&lt;span style=&quot; font-weight:700;&quot;&gt;F2 by default&lt;/span&gt;). After pressing this key, you have to select the area in which the text is located and then it will be voiced.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>0x71</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_13">
+     <item>
+      <widget class="QPushButton" name="APPLY_pushButton">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click this button to save settings.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Apply settings</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="RUN_pushButton">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Run&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Run</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
