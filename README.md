@@ -41,7 +41,7 @@ There are three versions: Pytesseract, EasyOCR, and Pytesseract+EasyOCR. Here is
 ![Знімок екрана 2024-05-02 192450](https://github.com/Santabot123/ozvuchator/assets/56690519/ca7f454c-750b-41e4-8d38-376f8f723980)
 ![Знімок екрана 2024-04-27 182902](https://github.com/Santabot123/ozvuchator/assets/56690519/6b93a6a2-fce8-4db0-b5f4-1c00ddd67ab3)
 
-- **EasyOCR** - сhoose this version of your text if it doesn't contrast well with the background, is in a photo, or has some distortion due to perspective. EasyOCR can also use the Nvidia GPU instead of the CPU. Examples of text that EasyOCR handles well:
+- **EasyOCR** - сhoose this version of your if text doesn't contrast well with the background, text in a photo, or has some distortion due to perspective. EasyOCR can also use the Nvidia GPU instead of the CPU. Examples of text that EasyOCR handles well:
 ![Знімок екрана 2024-05-02 192758](https://github.com/Santabot123/ozvuchator/assets/56690519/12f55c92-5157-4258-a10e-70726d0d0afa)
 ![Знімок екрана 2024-05-02 193230](https://github.com/Santabot123/ozvuchator/assets/56690519/8e06752e-164b-4b3f-960f-e929dc2a4888)
 
