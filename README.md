@@ -22,7 +22,7 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d1
  There are 2 ways:
  1. exe file:
     - Choose a version (if you do not know what to choose, read the Versions chapter below) 
-    - Download and unzip one of these archives :  .
+    - Download and unzip one of these archives : [Pytesseract](https://drive.google.com/file/d/1iWj3KTTYqXC0rV6dT2TqtNJLjFBBkGg_/view?usp=sharing), [EasyOCR](https://drive.google.com/file/d/1PR-r4gNP2HIV87lmcxK1qHnZHBag28hU/view?usp=sharing), [EasyOCR+Pytesseract](https://drive.google.com/file/d/1tkqsdPiK4eu4iOYi4diJva3RawpzL7EM/view?usp=sharing).
     - Then to run, go to `exe.win-amd64-3.10` and run `ozvuchator.exe`
  3. jupyter notebook:
     - Install [Anaconda](https://www.anaconda.com/installation-success?source=installer)
