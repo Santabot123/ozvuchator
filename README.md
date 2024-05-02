@@ -66,7 +66,7 @@ If you have already clicked Run and then want to change the settings, you need t
 - Text recognition will work well **only with printed letters** .
 <br>
 
-# List of supported languages for EasyOCR method:
+# List of supported languages for EasyOCR version:
 - afrikaans : 'af'<br>
 - albanian : 'sq'<br>
 - arabic : 'ar'<br>
@@ -111,7 +111,7 @@ If you have already clicked Run and then want to change the settings, you need t
 - urdu : 'ur'<br>
 - vietnamese : 'vi'<br>
 
-# List of supported languages for Pytesseract method:
+# List of supported languages for Pytesseract version:
 - Afrikaans : af
 - Albanian : sq
 - Arabic : ar
