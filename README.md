@@ -25,14 +25,14 @@ https://github.com/Santabot123/ozvuchator/assets/56690519/2a3650de-e093-48bf-8d1
     - Завантажте та розархівуйте один з цих архівів: [Pytesseract](https://drive.google.com/file/d/1oHwtpnOMQK-DUUiOAeekGwXaplZM-gS2/view?usp=sharing), [EasyOCR](https://drive.google.com/file/d/1JKMzWmEHGqZk0-FD3_ZalcqHBvNe2qZ9/view?usp=sharing), [EasyOCR+Pytesseract](https://drive.google.com/file/d/1vJq_qg2CgA7HWSxxWV2ZUKCVnL0oFyOC/view?usp=sharing).
     - Для запуску перейдіть до `exe.win-amd64-3.10` і запустіть `ozvuchator.exe`.
  3. jupyter notebook:
-   - Встановіть [Anaconda](https://www.anaconda.com/installation-success?source=installer)
-   - Створіть нове віртуальне середовище у Anaconda
-   - Завантажте цей репозиторій і розархівуйте його, або скористайтеся `git clone https://github.com/Santabot123/ozvuchator`.
-   - Виберіть версію (якщо ви не знаєте, яку вибрати, прочитайте розділ **Версії** нижче) 
-   - Якщо ви хочете використовувати Pyteeseract, завантажте [Tesseract 5.3.3](https://github.com/UB-Mannheim/tesseract/wiki) (можливо, коли ви читаєте цю інструкцію, буде новіша версія, але я не знаю, чи буде вона працювати так само добре, як 5.3.3, тому рекомендується використовувати 5.3.3) і встановіть її до папки Tesseract-OCR, розташованої у папці, куди ви завантажили цей репозиторій.
-   - Відкрийте jupyter notebook, знайдіть місце, куди ви розпакували цей репозиторій, і відкрийте файл `ozvuchator.ipynb`, який відповідає вашій обраній версії.
-   - Натисніть ⏩.  
-   - Зачекайте (перший запуск буде довгим, оскільки вам потрібно завантажити всі необхідні бібліотеки)
+    - Встановіть [Anaconda](https://www.anaconda.com/installation-success?source=installer)
+    - Створіть нове віртуальне середовище у Anaconda
+    - Завантажте цей репозиторій і розархівуйте його, або скористайтеся `git clone https://github.com/Santabot123/ozvuchator`.
+    - Виберіть версію (якщо ви не знаєте, яку вибрати, прочитайте розділ **Версії** нижче) 
+    - Якщо ви хочете використовувати Pyteeseract, завантажте [Tesseract 5.3.3](https://github.com/UB-Mannheim/tesseract/wiki) (можливо, коли ви читаєте цю інструкцію, буде новіша версія, але я не знаю, чи буде вона працювати так само добре, як 5.3.3, тому рекомендується використовувати 5.3.3) і встановіть її до папки Tesseract-OCR, розташованої у папці, куди ви завантажили цей репозиторій.
+    - Відкрийте jupyter notebook, знайдіть місце, куди ви розпакували цей репозиторій, і відкрийте файл `ozvuchator.ipynb`, який відповідає вашій обраній версії.
+    - Натисніть ⏩.  
+    - Зачекайте (перший запуск буде довгим, оскільки вам потрібно завантажити всі необхідні бібліотеки)
 
 # Версії
 
